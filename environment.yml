@@ -1,0 +1,11 @@
+#   conda configuration file
+#   conda env create -f environment.yml
+name: CORALIS-engine-0.1.0
+channels:
+  - conda-forge
+dependencies:
+  ## conda-forge packages
+  - conda-forge::python=3.9.7
+  - conda-forge::pandas=1.3.3
+  - conda-forge::requests=2.26.0
+  - conda-forge::pysqlite3=0.4.6

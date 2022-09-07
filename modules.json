@@ -1,0 +1,11 @@
+{
+    "name": "CORALIS database setup",
+    "homePage": "https://github.com/Daniel-VM/CORALIS",
+    "repos": {
+        "nf-core/modules": {
+            "custom/dumpsoftwareversions": {
+                "git_sha": "e5b44499efcf6f7fb24874886bac60591c5d94dd"
+            }
+        }
+    }
+}
