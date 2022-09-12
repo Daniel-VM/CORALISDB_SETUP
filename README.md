@@ -13,7 +13,7 @@ git clone https://github.com/Daniel-VM/CORALISDB_SETUP
 ```
 
 ## Usage
-In order to use this workflow you must install [conda](https://www.anaconda.com/products/distribution) in your system.
+In order to use this workflow you need [conda](https://www.anaconda.com/products/distribution) installed in your system.
 
 ```console
 nextflow run main -profile conda --json_url 'pathTo/url_file.json' --out 'pathTo/outputDir'

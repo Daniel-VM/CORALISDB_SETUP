@@ -42,7 +42,7 @@ mirtarbase_proc <- subset(mirtarbase, `Species.(miRNA)` != `Species.(Target.Gene
 # Filter experimentally validated data (strong & weak evidence)
 raid_exp <- raid %>%
   select(., -predict) %>%
-  subset((strong!="N/A") || (weak!="N/A")) %>%
+  subset((strong!="N/A") | (weak!="N/A")) %>%
   rename( Interactor1 = Interactor1.Symbol, Interactor2 = Interactor2.Symbol) %>%
   select(Interactor1,
          Category1,
@@ -60,7 +60,7 @@ raid_expIntra <- subset(raid_exp, Species1 != Species2) %>%
 n <- c(
   "circRNA",
   "lncRNA",
-  "miRNA",
+#  "miRNA",
   "ncRNA",
   "rRNA",
   "piRNA",
